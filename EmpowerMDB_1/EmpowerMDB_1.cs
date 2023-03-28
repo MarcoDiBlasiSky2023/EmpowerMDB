@@ -70,7 +70,7 @@ public class Script
 	/// <param name="engine">Link with SLAutomation process.</param>
 	public void Run(Engine engine)
 	{
-		engine.GenerateInformation("Hello world");
+		//engine.GenerateInformation("Hello world");
 
 		//var myDms = engine.GetDms();
 		//var elms = myDms.GetElements();
@@ -79,8 +79,8 @@ public class Script
 		//	engine.GenerateInformation(elm.Name);
 		//}
 
-		//var order = OrderFactory.CreateOrder("Order 1");
-		//order.Dispatch("MDB");
+		var order = OrderFactory.CreateOrder("Order 1");
+		order.Dispatch("MDB");
 
 
 	}
